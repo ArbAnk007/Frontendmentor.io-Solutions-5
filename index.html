@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="flex flex-col justify-center items-center min-h-screen bg-[#F0F0F0] gap-y-8">
+    <div
+      class="flex flex-col justify-start sm:h-[450px] sm:w-[600px] w-[300px] h-auto sm:p-8 py-8 px-4 bg-white sm:rounded-3xl rounded-2xl sm:rounded-br-[150px] rounded-br-[100px]">
+      <div class="flex sm:justify-start justify-center sm:gap-x-4 gap-x-4">
+        <div class="flex flex-col sm:gap-y-2 gap-y-1">
+          <label for="day" class="sm:text-sm text-xs tracking-[2px] font-semibold text-[#716f6f]">DAY</label>
+          <input type="number" id="day" min="1" max="31" placeholder="DD"
+            class="border-2 outline-[#854dff] sm:h-12 h-12 sm:p-4 p-2 font-bold sm:w-36 w-20 rounded-lg sm:text-2xl text-xl caret-[#854dff] cursor-pointer">
+        </div>
+        <div class="flex flex-col sm:gap-y-2 gap-y-1">
+          <label for="month" class="sm:text-sm text-xs tracking-[2px] font-semibold text-[#716f6f]">MONTH</label>
+          <input type="number" id="month" min="1" max="12" placeholder="MM"
+            class="border-2 outline-[#854dff] sm:h-12 h-12 sm:p-4 p-2 font-bold sm:w-36 w-20 rounded-lg sm:text-2xl text-xl caret-[#854dff] cursor-pointer">
+        </div>
+        <div class="flex flex-col sm:gap-y-2 gap-y-1">
+          <label for="year" class="sm:text-sm text-xs tracking-[2px] font-semibold text-[#716f6f]">YEAR</label>
+          <input type="number" id="year" placeholder="YYYY"
+            class="border-2 outline-[#854dff] sm:h-12 h-12 sm:p-4 p-2 font-bold sm:w-36 w-20 rounded-lg sm:text-2xl text-xl caret-[#854dff] cursor-pointer">
+        </div>
+      </div>
+      <div id="error-text" class="hidden sm:text-sm text-xs text-[#ff5757] mt-1">
+        Must be a valid date
+      </div>
+      <div class="relative">
+        <hr class="w-full border-[#716f6f] sm:my-8 my-12">
+        <img src="assets/images/icon-arrow.svg" alt="calculate time" id="calculate-button"
+          class="sm:max-w-full sm:h-auto h-12 bg-[#854dff] sm:hover:bg-[#000000] sm:p-4 p-3 rounded-full absolute sm:right-0 right-28 sm:top-0 top-6 cursor-pointer">
+      </div>
+      <div class="flex flex-col gap-y-2 sm:text-6xl text-4xl text-[#141414] font-extrabold italic">
+        <p><span id="years" class="text-[#854dff]">- -</span> years</p>
+        <p><span id="months" class="text-[#854dff]">- -</span> months</p>
+        <p><span id="days" class="text-[#854dff]">- -</span> days</p>
+      </div>
+    </div>
+    <div class="sm:text-base text-sm text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/ArbAnk007" target="_blank">Arbab Ansari</a>.
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
